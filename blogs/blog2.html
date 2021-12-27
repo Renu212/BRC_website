@@ -187,6 +187,19 @@ h4 {
     padding: 0;
   }
 }
+table {
+  
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+
 </style>
 </head>
 <body>
@@ -237,7 +250,7 @@ h4 {
         nucleotide sequences containing the four bases. One way to implement this is to map 2-bit sequences to the
         four nucleotides, as shown below.
         </p>
-        <table>
+        <table >
   
           <tr>
             <td>00</td>
@@ -257,9 +270,9 @@ h4 {
     <h4>A brief history of DNA data storage </h4>
     <p>The concept of using DNA for data storage dates back to mid-1960s when the Soviet physicist Mikhail Neiman and the mathematician Norbert Wiener expressed their ideas of storing and retrieving digital data at the molecular level. In 1988, an artist named Joe Davis was able to encode a 35-bit image of an ancient Germanic rune representing life and the female Earth in a DNA sequence, which was then inserted into E. coli. In 1999, secret messages were hidden in DNA microdots on paper. </p>
 
-<img src='https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2F21092/MediaObjects/41586_1999_Article_BF21092_Fig1_HTML.gif?as=webp' height="200px">
+<img src='https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2F21092/MediaObjects/41586_1999_Article_BF21092_Fig1_HTML.gif?as=webp' height="200px" style="margin-left: 25%;">
 
-<p>Figure 1: Genomic steganography: Secret messages encoded in DNA Source: https://www.nature.com/articles/21092</p>
+<p>Figure 1: Genomic steganography: Secret messages encoded in DNA Source: <a href='https://www.nature.com/articles/21092'>https://www.nature.com/articles/21092</a></p>
 <p>Following these remarkable attempts, several trials have been performed to improve the capacity and efficiency of DNA-based storage devices. More recently, in 2019, scientists were able to encode all of Wikipedia, totalling 16 GB, onto DNA strands. </p>
 <h4>A broad overview of the steps required </h4>
 <p>The four major steps involved in DNA data storage are: write, store, retrieve and read.</p>
@@ -272,7 +285,9 @@ h4 {
 <p>Both sequencing and synthesis are prone to errors like substitution, insertion and deletion of bases. In order to address these issues, error-correcting codes are implemented during the process of encoding. For example, redundant information is added to increase the probability that the original information can be retrieved even in the presence of errors and missing data. There are several ways to incorporate redundant information. Reed-Solomon codes are popular error-correcting codes that are also used to correct errors in present digital storage devices.&nbsp;</p>
 <h4>Storing data inside living cells!&nbsp;</h4>
 <p>Advancements in the field of synthetic biology have led to the construction of complicated synthetic genetic networks that can perform logical and state-dependent functions. Recording and storing of data can be done inside cells by using either a recombinase-based approach or CRISPR-based approaches. These systems can be used as biological recording devices which are more suited to collecting new data.&nbsp;</p>
-<p>Figure 2: Storing and recording data in DNA - in vivo approach Source: https://www.nature.com/articles/s41576-019-0125-3</p>
+<img src='../images/blog/blog2_fig 2.png' height="200px" style="margin-left: 25%;">
+
+<p>Figure 2: Storing and recording data in DNA - in vivo approach Source: <a href='https://www.nature.com/articles/s41576-019-0125-3'>https://www.nature.com/articles/s41576-019-0125-3</a></p>
 <h4>A Promising Alternative?&nbsp;</h4>
 <p>Despite the advantages of utilizing DNA to store data efficiently, there are several challenges and drawbacks that might need to be addressed. For example, it can take plenty of time to write and retrieve data, unlike modern data storage devices. Additionally, the degradation of DNA can be prevented only if it is stored under suitable conditions - low temperature and low humidity in the absence of ultraviolet rays. It is also important to develop better error-correcting mechanisms to improve the accuracy of the information obtained from the data. Hence, tremendous efforts are required to tackle these inherent problems.</p>
 <p>Nevertheless, there is immense scope for DNA being the ideal storage device in the future due to its capacity to store enormous amounts of data in low volumes. It is fascinating to note that, theoretically, all the available data in the world can be stored in just a few hundred grams of DNA. Moreover, the ease of replication of DNA allows copying of data in constant time regardless of the size of the data. On the other hand, the copying time of any modern digital storage device is proportional to the size of the data.</p>
@@ -289,7 +304,7 @@ h4 {
       </div>
       <div class="card1">
         <h3>Reference</h3>
-        <div class="name"><p>Ceze, L., Nivala, J. &amp; Strauss, K. Molecular digital data storage using DNA. Nat Rev Genet 20, 456&ndash;466 (2019). <a href="https://doi.org/10.1038/s41576-019-0125-3 " style="color: black;">https://doi.org/10.1038/s41576-019-0125-3</a></p></div><br>
+        <div class="name"><p>Ceze, L., Nivala, J. &amp; Strauss, K. Molecular digital data storage using DNA. Nat Rev Genet 20, 456&ndash;466 (2019). <a href="https://doi.org/10.1038/s41576-019-0125-3 " style="color: purple;">https://doi.org/10.1038/s41576-019-0125-3</a></p></div><br>
         
       </div>
       <div class="card1">
