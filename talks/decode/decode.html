@@ -124,20 +124,11 @@
     font-family: Calibri; 
   }
  
- 
- 
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  @media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
+  * {
+  box-sizing: border-box;
 }
+
+/* Create three equal columns that floats next to each other */
 .column {
   float: left;
   width: 33.33%;
@@ -145,6 +136,24 @@
   text-align: center;
 /* Should be removed. Only for demonstration */
 }
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+ 
+  
+  /* Clear floats after the columns */
+ 
   
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
  
@@ -171,7 +180,7 @@
     <div class="row" style="background-color: #105652; margin: 10px; padding: 20px; color: white">
       <h2>Old Talks</h2>
      
-      <div class="row" style="background-color: white; padding: 20px; color: rgb(71, 70, 70); ">  
+      <div class="row1" style="background-color: white; padding: 20px; color: rgb(71, 70, 70); ">  
           
         
       <div class="column" >
@@ -180,6 +189,7 @@
         <p><a href='../../talks/decode/niravsir.html'><img id="myImage"  src='../../images/initiative/decode/niravsir.png' height="300px" ></a></p>
         <p>Biochemical Graph Reconstruction and Representation using AI/ML Techniques</p>
     </div>
+    <br>
     <div class="column" >
       
       <p><a href='../../talks/decode/hamsamam.html'><img id="myImage"  src='../../images/initiative/decode/hamsamam.jpg' height="300px" ></a></p>
