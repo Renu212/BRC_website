@@ -128,22 +128,31 @@
  
   
   /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  @media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
+  * {
+  box-sizing: border-box;
 }
+
+/* Create three equal columns that floats next to each other */
 .column {
   float: left;
   width: 33.33%;
   padding: 10px;
   text-align: center;
 /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
   
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -170,7 +179,7 @@
 <br>
     <div class="row" style="background-color: #105652; margin: 10px; padding: 20px; color: white">
       <h2>Old Talks</h2>
-      <div class="row" style="background-color: white; padding: 20px; color: rgb(71, 70, 70); ">
+      <div class="row1" style="background-color: white; padding: 20px; color: rgb(71, 70, 70); ">
         <div class="column" >
           <p><a href='../../talks/seminar/10sep2k21.html'><img id="myImage"  src='../../images/initiative/seminar/10sep2k21.jpeg' height="300px" ></a></p>
             <p>Culprits behind Multisystemic Covid - 19: Molecular Mimics and Rogue Antibodies</p>
@@ -184,7 +193,7 @@
             <p>Intern Talks by Srivarshini and Adriza</p>
         </div>
       </div>
-      <div class="row" style="background-color: white; padding: 20px; color: rgb(71, 70, 70); ">
+      <div class="row1" style="background-color: white; padding: 20px; color: rgb(71, 70, 70); ">
         <div class="column" >
           <p><a href='../../talks/seminar/29june2k21.html'><img id="myImage"  src='../../images/initiative/seminar/29june2k21.jpeg' height="300px" ></a></p>
             <p>Using mouse models to answer mechanistic and cancer therapeutic questions</p>
