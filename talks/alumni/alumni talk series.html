@@ -128,16 +128,11 @@
  
   
   /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  @media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
+  * {
+  box-sizing: border-box;
 }
+
+/* Create three equal columns that floats next to each other */
 .column {
   float: left;
   width: 33.33%;
@@ -145,7 +140,20 @@
   text-align: center;
 /* Should be removed. Only for demonstration */
 }
-  
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
  
   </style>
@@ -170,7 +178,7 @@
 <br>
 <div class="row" style="background-color: #105652; margin: 10px; padding: 20px; color: white">
   <h2>Old Talks</h2>
-<div class="row" style="background-color: white; padding: 20px; color: rgb(71, 70, 70); ">
+<div class="row1" style="background-color: white; padding: 20px; color: rgb(71, 70, 70); ">
     <div class="column" >
       <p><a href='../../talks/alumni/28july2k21.html'><img id="myImage"  src='../../images/initiative/alumni/28july2k21.png' height="300px" ></a></p>
         <p>The Devil is in the DNA: Utilizing the language of DNA to decipher the driving force behind cancer</p>
@@ -184,7 +192,7 @@
         <p>How to submit your best Graduate School application?</p>
     </div>
 </div>
-<div class="row" style="background-color: white; padding: 20px; color: rgb(71, 70, 70);">
+<div class="row1" style="background-color: white; padding: 20px; color: rgb(71, 70, 70);">
 
     <div class="column">
         <p><a href='../../talks/alumni/16april2k21.html'><img id="myImage"  src='../../images/initiative/alumni/16april2k21.jpeg' height="300px" ></a></p>
@@ -201,7 +209,7 @@
 
     
 </div>
-<div class="row" style="background-color: white; padding: 20px; color: rgb(71, 70, 70);">
+<div class="row1" style="background-color: white; padding: 20px; color: rgb(71, 70, 70);">
     <div class="column" >
     <p><a href='../../talks/alumni/26mar2k21.html'><img id="myImage"  src='../../images/initiative/alumni/26mar2k21.jpeg' height="300px" ></a></p>
       <p>Engineering a programmable RNA editing toolset for in vivo gene therapy</p>
@@ -215,7 +223,7 @@
         <p>My journey from IITM to graduate school and onto pharma R&D</p>
     </div>
 </div>
-<div class="row" style="background-color: white; padding: 20px; color: rgb(71, 70, 70);">
+<div class="row1" style="background-color: white; padding: 20px; color: rgb(71, 70, 70);">
   <div class="column" >
     <p><a href='../../talks/alumni/25feb2k21.html'><img id="myImage"  src='../../images/initiative/alumni/25feb2k21.jpg' height="300px" ></a></p>
       <p>What I wish I knew when I was at insti!</p>
@@ -229,7 +237,7 @@
       <p>A CRISPR-Cas9 screen reveals novel mechanisms of PD-L1 regulation in human lung Cancer</p>
   </div>
 </div>
-<div class="row" style="background-color: white; padding: 20px; color: rgb(71, 70, 70);">
+<div class="row1" style="background-color: white; padding: 20px; color: rgb(71, 70, 70);">
   
   <div class="column" >
     <p><a href='../../talks/alumni/19dec2k20.html'><img id="myImage"  src='../../images/initiative/alumni/19dec2k20.png' height="300spx" ></a></p>
@@ -244,7 +252,7 @@
       <p>Data Science opportunities in Biotech</p>
   </div>
 </div>
-<div class="row" style="background-color: white; padding: 20px; color: rgb(71, 70, 70); ">
+<div class="row1" style="background-color: white; padding: 20px; color: rgb(71, 70, 70); ">
   
   
   <div class="column" >
